@@ -1,0 +1,58 @@
+html,
+body {
+    height: 100%;
+}
+
+.side-navbar {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    height: 100%;
+}
+
+nav.side-open.open.side-navbar {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    height: 100%;
+}
+
+nav.side-open.open span,
+h5,
+h5+p {
+    display: block;
+}
+
+nav.side-open.open li {
+    justify-content: space-between !important;
+}
+
+@media screen and (max-width: 792px) {
+    .user-op,
+    .user-area,
+    .user-name {
+        display: none;
+    }
+    .open .user-area,
+    .open .user-name {
+        font-size: 15px;
+        display: block;
+    }
+    nav.side-open img {
+        width: 60px;
+    }
+    nav.side-open.side-navbar {
+        width: 70px;
+    }
+    nav.side-open.justify-content-between {
+        justify-content: center!important;
+    }
+    nav.side-open,
+    span,
+    h5,
+    h5+p {
+        transition: all .1s linear;
+    }
+}
