@@ -73,10 +73,35 @@
     background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 600px) {
+    .pie {
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .pieText {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .graph {
+        /* width: 26%; */
+        opacity: 0;
+    }
+}
+
 body {
     background-color: yellow;
 }
 
 .text {
     color: white;
+}
+
+.cardsDom {
+    margin-top: 5%;
 }
